@@ -1,0 +1,126 @@
+.header {
+  cursor: pointer;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 24px;
+  position: sticky;
+
+  &-container {
+    display: flex;
+    align-items: center;
+
+    &-menu {
+      margin-right: 24px;
+      font-size: 20px;
+    }
+
+    &-items {
+      display: flex;
+
+      &-item {
+        user-select: none;
+        list-style-type: none;
+        margin-right: 12px;
+
+        a {
+          padding: 0;
+          color: #212529;
+
+          &:hover,
+          &:active,
+          &:focus {
+            color: $link;
+          }
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &-user_settings {
+    display: flex;
+
+    &-notification {
+      display: flex;
+      align-items: center;
+      margin-right: 16px;
+
+      &-icon {
+        margin-right: 6px;
+        font-size: 20px;
+      }
+
+      &-counter {
+        margin: 0;
+      }
+    }
+
+    &-settings {
+      display: flex;
+      align-items: center;
+
+      &:first-child {
+        margin-right: 16px;
+      }
+
+      .btn-outline-secondary {
+        display: flex;
+        align-items: center;
+        border: none;
+        color: #212529;
+
+        &.dropdown-toggle,
+        &.dropdown-toggle:focus,
+        &:active,
+        &:hover {
+          background-color: inherit !important;
+          color: #212529 !important;
+          box-shadow: none !important;
+        }
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+
+      &-icon {
+        font-size: 20px;
+        margin-right: 6px;
+      }
+
+      &-person {
+        margin: 0 6px 0 0;
+      }
+    }
+  }
+
+  &-user_menu {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0;
+    color: #212529;
+    outline: none;
+
+    &.btn-link {
+      box-shadow: none;
+      border: none;
+    }
+
+    &.btn-link:hover,
+    &.btn-link:focus {
+      text-decoration: none;
+      color: #212529;
+      border: none;
+    }
+
+    &-link {
+      font-size: 13px !important;
+    }
+  }
+}

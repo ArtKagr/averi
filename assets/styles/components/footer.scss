@@ -1,0 +1,44 @@
+.footer {
+  &-price {
+    &-pagination {
+      margin: 0;
+      padding: 0;
+      flex: 0 0 90%;
+      max-width: 90%;
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+
+      .page-item {
+        .page-link {
+          cursor: pointer;
+          border: none;
+          background: none;
+          color: #212529;
+          font-size: 16px;
+
+          &:focus {
+            outline: none;
+            color: $link;
+            box-shadow: none;
+          }
+
+          &.-active {
+            color: $link;
+          }
+        }
+      }
+    }
+
+    &-per_page {
+      display: flex;
+    }
+
+    &-total_rows {
+      text-align: center;
+      margin: 0;
+      flex: 0 0 5%;
+      max-width: 5%;
+    }
+  }
+}

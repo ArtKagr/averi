@@ -1,0 +1,30 @@
+.matching_modal {
+  &-esklp_filter {
+    background: $gray-200;
+    height: 4vh;
+
+    &-mnn_filter {
+      width: 10%;
+    }
+  }
+
+  &-tools {
+    background: $gray-200;
+    height: 4vh;
+
+    &-close {
+      font-size: 24px;
+
+      &:hover {
+        cursor: pointer;
+        color: $link;
+        box-shadow: none;
+      }
+
+      &:focus {
+        outline: none;
+        border: none;
+      }
+    }
+  }
+}
